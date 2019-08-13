@@ -978,3 +978,4 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-08-13 15:35:26,186 [http-nio-8082-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:35:26.186135900
 2019-08-13 15:38:51,976 [http-nio-8082-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:38:51.976806200
 2019-08-13 15:40:26,415 [http-nio-8082-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:40:26.415687400
+2019-08-13 15:43:33,453 [http-nio-8082-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:43:33.453837600
