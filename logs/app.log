@@ -391,3 +391,588 @@ ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - [wEx] is not a v
 2019-08-13 09:25:35,851 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
 2019-08-13 09:25:35,869 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 6.412 seconds (JVM running for 8.83)
 2019-08-13 10:50:26,463 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool = HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m51s330ms668µs867ns).
+2019-08-13 11:50:20,982 [http-nio-8080-exec-2] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 11:50:20,985 [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-13 11:50:21,058 [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 73 ms
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:06:07,935 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 9400 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:06:07,980 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:06:07,982 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:06:10,982 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:06:11,076 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:06:11,097 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:06:11,097 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:06:11,284 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:06:11,285 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3159 ms
+2019-08-13 15:06:11,533 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:06:12,130 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:06:12,670 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:06:13,183 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:06:13,211 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:06:13,217 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:06:13,218 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:06:13,226 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:06:13,226 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:06:13,226 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:06:13,231 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:06:13,234 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:06:13,239 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:06:13,240 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:06:13,244 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:07:57,919 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 18040 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:07:57,922 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:07:57,922 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:08:00,490 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:08:00,515 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:00,538 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:08:00,539 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:08:00,693 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:08:00,694 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2671 ms
+2019-08-13 15:08:00,971 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:08:01,276 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:08:01,889 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:08:02,672 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:02,690 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:08:02,696 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:02,696 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:08:02,726 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:08:02,726 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:02,727 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:02,730 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:08:02,732 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:08:02,736 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:08:02,737 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:08:02,756 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:08:31,924 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 19780 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:08:31,927 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:08:31,928 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:08:34,170 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:08:34,203 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:34,226 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:08:34,226 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:08:34,389 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:08:34,389 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2391 ms
+2019-08-13 15:08:34,636 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:08:34,872 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:08:35,321 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:08:35,710 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:35,730 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:08:35,738 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:35,739 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:08:35,748 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:08:35,749 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:35,749 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:08:35,753 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:08:35,756 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:08:35,761 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:08:35,762 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:08:35,767 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:09:35,892 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 6452 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:09:35,895 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:09:35,895 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:09:38,399 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:09:38,420 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:09:38,437 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:09:38,438 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:09:38,608 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:09:38,609 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2576 ms
+2019-08-13 15:09:38,787 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:09:38,965 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:09:39,360 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:09:39,725 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:09:39,750 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:09:39,762 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:09:39,763 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:09:39,779 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:09:39,779 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:09:39,780 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:09:39,784 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:09:39,787 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:09:39,791 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:09:39,792 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:09:39,799 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:10:07,369 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 15888 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:10:07,372 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:10:07,372 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:10:09,624 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:10:09,654 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:09,669 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:10:09,669 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:10:09,811 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:10:09,812 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2364 ms
+2019-08-13 15:10:09,985 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:10:10,159 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:10:10,545 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:10:10,931 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:10,951 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:10:10,959 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:10,960 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:10:10,975 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:10:10,978 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:10,978 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:10,985 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:10:10,988 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:10:10,993 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:10:10,994 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:10:10,999 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:10:32,377 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 18212 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:10:32,379 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:10:32,380 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:10:34,901 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:10:34,922 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:34,936 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:10:34,937 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:10:35,077 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:10:35,077 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2576 ms
+2019-08-13 15:10:35,277 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:10:35,452 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:10:35,808 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:10:36,172 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:36,189 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:10:36,195 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:36,199 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:10:36,210 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:10:36,211 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:36,211 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:10:36,214 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:10:36,216 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:10:36,221 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:10:36,222 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:10:36,232 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:12:13,035 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 17808 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:12:13,041 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:12:13,045 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:12:16,790 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:12:16,848 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:12:16,883 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:12:16,884 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:12:17,277 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:12:17,277 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 4094 ms
+2019-08-13 15:12:17,707 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:12:18,162 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:12:18,985 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:12:19,881 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:12:19,914 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:12:19,931 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:12:19,932 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:12:19,960 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:12:19,961 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:12:19,962 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:12:19,974 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:12:19,981 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:12:19,988 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:12:19,990 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:12:20,004 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:13:34,005 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 1332 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:13:34,008 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:13:34,008 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:13:36,647 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 15:13:36,671 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:13:36,682 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:13:36,682 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:13:36,861 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:13:36,861 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2738 ms
+2019-08-13 15:13:37,073 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:13:37,269 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:13:37,721 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:13:38,149 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:13:38,174 [main] [ERROR] org.apache.catalina.util.LifecycleBase = Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:461)
+	at java.base/sun.nio.ch.Net.bind(Net.java:453)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 15:13:38,183 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:13:38,183 [main] [INFO ] org.apache.catalina.core.StandardService = Stopping service [Tomcat]
+2019-08-13 15:13:38,193 [main] [INFO ] org.apache.catalina.util.LifecycleBase = The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 15:13:38,194 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:13:38,194 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 15:13:38,199 [main] [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener = 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 15:13:38,201 [main] [ERROR] o.s.b.d.LoggingFailureAnalysisReporter = 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 15:13:38,208 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:13:38,209 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-13 15:13:38,216 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 15:15:59,862 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 14724 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 15:15:59,865 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 15:15:59,865 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 15:16:02,775 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8082 (http)
+2019-08-13 15:16:02,801 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8082"]
+2019-08-13 15:16:02,814 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 15:16:02,815 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 15:16:02,967 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 15:16:02,968 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3046 ms
+2019-08-13 15:16:03,156 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 15:16:03,354 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 15:16:03,726 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 15:16:04,119 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8082"]
+2019-08-13 15:16:04,157 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8082 (http) with context path ''
+2019-08-13 15:16:04,162 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 5.113 seconds (JVM running for 6.014)
+2019-08-13 15:17:03,421 [http-nio-8082-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 15:17:03,422 [http-nio-8082-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-13 15:17:03,445 [http-nio-8082-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 23 ms
+2019-08-13 15:17:03,545 [http-nio-8082-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:17:03.545225700
+2019-08-13 15:35:26,186 [http-nio-8082-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:35:26.186135900
