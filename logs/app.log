@@ -1,0 +1,393 @@
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-05 17:55:05,251 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 12804 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-05 17:55:05,255 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-05 17:55:05,266 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-05 17:55:07,754 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-05 17:55:07,788 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-05 17:55:07,808 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-05 17:55:07,808 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-05 17:55:08,018 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-05 17:55:08,019 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2593 ms
+2019-08-05 17:55:08,187 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-05 17:55:08,440 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-05 17:55:08,871 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-05 17:55:09,221 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-05 17:55:09,258 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-05 17:55:09,263 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.835 seconds (JVM running for 5.731)
+2019-08-05 17:55:31,922 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-05 17:55:31,922 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-05 17:55:31,932 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 10 ms
+2019-08-05 17:55:31,992 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T17:55:31.992618700
+2019-08-05 17:56:22,424 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findById, Date:2019-08-05T17:56:22.424673
+2019-08-05 17:58:14,636 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:insert, Date:2019-08-05T17:58:14.636929
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: logFormat_IS_UNDEFINED
+#logback.classic pattern: logFormat_IS_UNDEFINED
+#logback.classic pattern: logFormat_IS_UNDEFINED
+#logback.classic pattern: logFormat_IS_UNDEFINED
+logFormat_IS_UNDEFINEDjava.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for composite conversion word [clr]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - Failed to create converter for [%clr] keyword
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - There is no conversion class registered for conversion word [wEx]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@19c65cdc - [wEx] is not a valid conversion word
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:219)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:72)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:59)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:117)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:279)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:254)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:219)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:196)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:506)
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-05 18:29:58,692 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 15880 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-05 18:29:58,694 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-05 18:29:58,695 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-05 18:30:00,900 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-05 18:30:00,923 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-05 18:30:00,937 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-05 18:30:00,938 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-05 18:30:01,111 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-05 18:30:01,112 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2350 ms
+2019-08-05 18:30:01,264 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-05 18:30:01,459 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-05 18:30:01,836 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-05 18:30:02,163 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-05 18:30:02,210 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-05 18:30:02,220 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.669 seconds (JVM running for 5.827)
+2019-08-05 18:30:07,472 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-05 18:30:07,473 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-05 18:30:07,485 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 12 ms
+2019-08-05 18:30:07,537 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:30:07.537311600
+2019-08-05 18:30:11,972 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findById, Date:2019-08-05T18:30:11.972300100
+2019-08-05 18:39:11,543 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findById, Date:2019-08-05T18:39:11.543422300
+2019-08-05 18:39:15,246 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:update, Date:2019-08-05T18:39:15.246547200
+2019-08-05 18:39:19,706 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:39:19.706920400
+2019-08-05 18:43:06,161 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:update, Date:2019-08-05T18:43:06.161557700
+2019-08-05 18:43:09,707 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:43:09.707780300
+2019-08-05 18:46:53,554 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:46:53.554719400
+2019-08-05 18:46:55,354 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:46:55.354754800
+2019-08-05 18:46:56,350 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:46:56.350093300
+2019-08-05 18:46:57,199 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:46:57.199254300
+2019-08-05 18:46:58,696 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:46:58.696175900
+2019-08-05 18:47:01,620 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:47:01.620924100
+2019-08-05 18:47:02,621 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:47:02.620353200
+2019-08-05 18:47:03,519 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:47:03.519628800
+2019-08-05 18:47:04,357 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:47:04.357222700
+2019-08-05 18:47:05,137 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:deleteById, Date:2019-08-05T18:47:05.137093500
+2019-08-05 18:47:11,757 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:11.757834500
+2019-08-05 18:47:13,790 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:13.790965600
+2019-08-05 18:47:15,241 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:15.241075300
+2019-08-05 18:47:16,533 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:16.533467400
+2019-08-05 18:47:18,327 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:18.327799100
+2019-08-05 18:47:19,662 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:19.662770800
+2019-08-05 18:47:20,904 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:20.904759900
+2019-08-05 18:47:22,462 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:22.462893
+2019-08-05 18:47:23,888 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:23.888595700
+2019-08-05 18:47:25,087 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:25.087167800
+2019-08-05 18:47:26,134 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:26.134656300
+2019-08-05 18:47:27,271 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:27.271989200
+2019-08-05 18:47:28,389 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-05T18:47:28.389375
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-06 10:30:50,924 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 584 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-06 10:30:50,933 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-06 10:30:50,934 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-06 10:30:53,669 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-06 10:30:53,697 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-06 10:30:53,719 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-06 10:30:53,719 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-06 10:30:53,909 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-06 10:30:53,910 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2882 ms
+2019-08-06 10:30:54,096 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-06 10:30:54,367 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-06 10:30:54,898 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-06 10:30:55,214 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-06 10:30:55,246 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-06 10:30:55,266 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 5.411 seconds (JVM running for 8.212)
+2019-08-06 10:44:32,187 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-06 10:44:32,189 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-06 10:44:32,393 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 204 ms
+2019-08-06 10:44:34,069 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T10:44:34.069228800
+2019-08-06 11:03:16,116 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T11:03:16.116113200
+2019-08-06 11:13:04,310 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T11:13:04.309604600
+2019-08-06 13:40:54,890 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool = HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m30s14ms265µs762ns).
+2019-08-06 14:10:16,536 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T14:10:16.536277300
+2019-08-06 14:12:14,873 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T14:12:14.873482
+2019-08-06 14:14:42,529 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T14:14:42.529194700
+2019-08-06 14:48:34,317 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T14:48:34.316998400
+2019-08-06 15:10:54,525 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T15:10:54.525579900
+2019-08-06 15:35:08,230 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T15:35:08.230262800
+2019-08-06 15:58:16,219 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T15:58:16.219810900
+2019-08-06 15:59:46,084 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T15:59:46.084724600
+2019-08-06 16:23:38,747 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T16:23:38.747262600
+2019-08-06 16:25:14,736 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T16:25:14.736363600
+2019-08-06 17:04:09,372 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:04:09.371456300
+2019-08-06 17:04:26,440 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:04:26.440598900
+2019-08-06 17:04:29,123 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:04:29.123207300
+2019-08-06 17:04:31,310 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:04:31.310913500
+2019-08-06 17:07:10,586 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:07:10.586670100
+2019-08-06 17:07:11,850 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:07:11.850849900
+2019-08-06 17:07:12,790 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:07:12.790974700
+2019-08-06 17:07:13,923 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:07:13.923846600
+2019-08-06 17:07:14,988 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:07:14.988184700
+2019-08-06 17:09:16,191 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:09:16.191984200
+2019-08-06 17:09:17,286 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:09:17.286963
+2019-08-06 17:09:18,389 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:09:18.389766600
+2019-08-06 17:09:19,229 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:09:19.229145600
+2019-08-06 17:11:08,018 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:08.018318900
+2019-08-06 17:11:09,347 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:09.347634600
+2019-08-06 17:11:10,377 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:10.377062600
+2019-08-06 17:11:11,405 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:11.405432600
+2019-08-06 17:11:28,997 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:28.997145100
+2019-08-06 17:11:31,149 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:31.149064100
+2019-08-06 17:11:32,219 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:32.219356500
+2019-08-06 17:11:34,586 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:34.586485
+2019-08-06 17:11:35,870 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:35.870114200
+2019-08-06 17:11:36,964 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:11:36.964428500
+2019-08-06 17:22:05,904 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:05.904712200
+2019-08-06 17:22:09,665 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:09.665031400
+2019-08-06 17:22:12,864 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:12.864500400
+2019-08-06 17:22:24,087 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:24.087117
+2019-08-06 17:22:25,951 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:25.951625700
+2019-08-06 17:22:27,549 [http-nio-8080-exec-8] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:27.549433300
+2019-08-06 17:22:28,857 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:28.857071200
+2019-08-06 17:22:30,528 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:30.528297500
+2019-08-06 17:22:30,830 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:30.830934400
+2019-08-06 17:22:31,916 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:31.916848400
+2019-08-06 17:22:32,681 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:32.681052500
+2019-08-06 17:22:33,454 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:33.454242900
+2019-08-06 17:22:34,029 [http-nio-8080-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:34.029371500
+2019-08-06 17:22:34,703 [http-nio-8080-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:34.703626400
+2019-08-06 17:22:35,324 [http-nio-8080-exec-7] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-06T17:22:35.324202
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:01:44,126 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 12552 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:01:44,129 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:01:44,130 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:01:47,046 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:01:47,092 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:01:47,113 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:01:47,114 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:01:47,326 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:01:47,327 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3019 ms
+2019-08-08 11:01:47,559 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:01:47,880 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:01:48,394 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:01:48,750 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:01:48,783 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:01:48,793 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 6.159 seconds (JVM running for 9.1)
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:02:35,058 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 15496 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:02:35,061 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:02:35,062 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:02:38,932 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:02:38,953 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:02:38,967 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:02:38,967 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:02:39,129 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:02:39,129 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3940 ms
+2019-08-08 11:02:39,365 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:02:39,583 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:02:40,065 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:02:40,525 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:02:40,555 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:02:40,564 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 6.768 seconds (JVM running for 8.076)
+2019-08-08 11:02:42,243 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:02:42,245 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:02:42,270 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 25 ms
+2019-08-08 11:02:42,359 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:02:42.359959400
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:05:34,378 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 936 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:05:34,381 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:05:34,381 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:05:36,805 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:05:36,827 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:05:36,840 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:05:36,841 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:05:36,972 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:05:36,972 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2400 ms
+2019-08-08 11:05:37,127 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:05:37,288 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:05:37,622 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:05:37,929 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:05:37,965 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:05:37,965 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.365 seconds (JVM running for 5.167)
+2019-08-08 11:05:42,710 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:05:42,711 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:05:42,721 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 10 ms
+2019-08-08 11:05:42,764 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:05:42.764127600
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:06:03,633 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 15904 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:06:03,635 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:06:03,638 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:06:05,668 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:06:05,690 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:06:05,702 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:06:05,703 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:06:05,833 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:06:05,834 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2104 ms
+2019-08-08 11:06:06,011 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:06:06,194 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:06:06,561 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:06:06,926 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:06:06,965 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:06:06,970 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.172 seconds (JVM running for 5.036)
+2019-08-08 11:06:10,516 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:06:10,517 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:06:10,526 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 9 ms
+2019-08-08 11:06:10,581 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:06:10.581340300
+2019-08-08 11:06:21,230 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:findById, Date:2019-08-08T11:06:21.230068500
+2019-08-08 11:06:31,475 [http-nio-8080-exec-3] [INFO ] com.example.demo.user.UserService = log, method:insert, Date:2019-08-08T11:06:31.475998200
+2019-08-08 11:06:37,242 [http-nio-8080-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:06:37.242358400
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:09:40,278 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 12632 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:09:40,280 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:09:40,281 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:09:42,575 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:09:42,603 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:09:42,620 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:09:42,621 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:09:42,815 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:09:42,816 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2058 ms
+2019-08-08 11:09:43,030 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:09:43,257 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:09:43,680 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:09:44,133 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:09:44,166 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:09:44,184 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.821 seconds (JVM running for 5.661)
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:12:01,376 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 6840 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:12:01,379 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:12:01,380 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:12:04,645 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:12:04,673 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:12:04,696 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:12:04,697 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:12:04,854 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:12:04,855 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3127 ms
+2019-08-08 11:12:05,092 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:12:05,358 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:12:05,924 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:12:06,238 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:12:06,269 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:12:06,277 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 5.862 seconds (JVM running for 6.702)
+2019-08-08 11:12:38,381 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:12:38,382 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:12:38,395 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 13 ms
+2019-08-08 11:12:38,463 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:12:38.463857500
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:13:02,060 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 11544 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:13:02,065 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:13:02,082 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:13:04,712 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:13:04,746 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:13:04,762 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:13:04,763 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:13:04,930 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:13:04,930 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2713 ms
+2019-08-08 11:13:05,173 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:13:05,464 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:13:05,924 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:13:06,435 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:13:06,488 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:13:06,493 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 5.219 seconds (JVM running for 7.376)
+2019-08-08 11:13:10,077 [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:13:10,078 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:13:10,088 [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 10 ms
+2019-08-08 11:13:10,150 [http-nio-8080-exec-1] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:13:10.150996800
+2019-08-08 11:13:12,888 [http-nio-8080-exec-2] [INFO ] com.example.demo.user.UserService = log, method:insert, Date:2019-08-08T11:13:12.888606100
+2019-08-08 11:13:44,441 [Thread-3] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:13:44,442 [Thread-3] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown initiated...
+2019-08-08 11:13:44,448 [Thread-3] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Shutdown completed.
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-08 11:15:40,329 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 9128 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-08 11:15:40,331 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-08 11:15:40,332 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-08 11:15:42,521 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-08 11:15:42,542 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:15:42,553 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-08 11:15:42,554 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-08 11:15:42,676 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-08 11:15:42,677 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 2233 ms
+2019-08-08 11:15:42,848 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-08 11:15:43,027 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-08 11:15:43,390 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-08 11:15:43,743 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-08 11:15:43,783 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-08 11:15:43,793 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 4.455 seconds (JVM running for 5.351)
+2019-08-08 11:15:48,456 [http-nio-8080-exec-10] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-08 11:15:48,457 [http-nio-8080-exec-10] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-08 11:15:48,469 [http-nio-8080-exec-10] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 12 ms
+2019-08-08 11:15:48,591 [http-nio-8080-exec-10] [INFO ] com.example.demo.user.UserService = log, method:insert, Date:2019-08-08T11:15:48.591768200
+2019-08-08 11:15:50,919 [http-nio-8080-exec-9] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-08T11:15:50.919573200
+2019-08-08 14:06:55,234 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool = HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m11s764ms52µs444ns).
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-13 09:25:30,464 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 9136 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-13 09:25:30,477 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-13 09:25:30,478 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-13 09:25:33,869 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8080 (http)
+2019-08-13 09:25:33,911 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 09:25:33,947 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-13 09:25:33,948 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 09:25:34,163 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-13 09:25:34,164 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 3602 ms
+2019-08-13 09:25:34,360 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-13 09:25:34,752 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-13 09:25:35,258 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 09:25:35,809 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 09:25:35,851 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 09:25:35,869 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 6.412 seconds (JVM running for 8.83)
+2019-08-13 10:50:26,463 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool = HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m51s330ms668µs867ns).

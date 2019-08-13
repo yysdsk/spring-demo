@@ -1,0 +1,3 @@
+INSERT INTO user VALUES ('19001', 'yasuda', 'System', CURRENT_TIMESTAMP);
+INSERT INTO user VALUES ('19002', 'takano', 'Sales', CURRENT_TIMESTAMP);
+INSERT INTO user VALUES ('19003', 'yasuda', 'Finance', CURRENT_TIMESTAMP);

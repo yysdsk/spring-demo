@@ -1,0 +1,4 @@
+2019-07-03 15:00:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: テーブル "FILE_INFO" はすでに存在します
+Table "FILE_INFO" already exists; SQL statement:
+CREATE TABLE file_info ( file_id varchar(100) PRIMARY KEY, file_type varchar(100) NOT NULL, file_name varchar(200) NOT NULL, file_path varchar(200) NOT NULL, content_type varchar(100) NOT NULL, content_length bigint NOT NULL, registered_date timestamp NOT NULL ) [42101-196]
