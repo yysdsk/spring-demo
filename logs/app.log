@@ -979,3 +979,25 @@ Verify the connector's configuration, identify and stop any process that's liste
 2019-08-13 15:38:51,976 [http-nio-8082-exec-4] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:38:51.976806200
 2019-08-13 15:40:26,415 [http-nio-8082-exec-5] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:40:26.415687400
 2019-08-13 15:43:33,453 [http-nio-8082-exec-6] [INFO ] com.example.demo.user.UserService = log, method:findAll, Date:2019-08-13T15:43:33.453837600
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+#logback.classic pattern: %date [%thread] [%-5level] %logger{40} = %message%n
+2019-08-16 12:59:03,044 [main] [INFO ] com.example.demo.DemoApplication = Starting DemoApplication on SPS-3145 with PID 14984 (C:\project\ojt\workspece\demo\target\classes started by yusukyasuda in C:\project\ojt\workspece\demo)
+2019-08-16 12:59:03,047 [main] [DEBUG] com.example.demo.DemoApplication = Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019-08-16 12:59:03,048 [main] [INFO ] com.example.demo.DemoApplication = No active profile set, falling back to default profiles: default
+2019-08-16 12:59:12,040 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat initialized with port(s): 8082 (http)
+2019-08-16 12:59:12,083 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Initializing ProtocolHandler ["http-nio-8082"]
+2019-08-16 12:59:12,117 [main] [INFO ] org.apache.catalina.core.StandardService = Starting service [Tomcat]
+2019-08-16 12:59:12,118 [main] [INFO ] org.apache.catalina.core.StandardEngine = Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-16 12:59:12,387 [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring embedded WebApplicationContext
+2019-08-16 12:59:12,387 [main] [INFO ] o.s.web.context.ContextLoader = Root WebApplicationContext: initialization completed in 6469 ms
+2019-08-16 12:59:12,582 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Starting...
+2019-08-16 12:59:12,876 [main] [INFO ] com.zaxxer.hikari.HikariDataSource = HikariPool-1 - Start completed.
+2019-08-16 12:59:13,861 [main] [INFO ] o.s.s.concurrent.ThreadPoolTaskExecutor = Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-16 12:59:14,142 [main] [INFO ] o.apache.coyote.http11.Http11NioProtocol = Starting ProtocolHandler ["http-nio-8082"]
+2019-08-16 12:59:14,196 [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer = Tomcat started on port(s): 8082 (http) with context path ''
+2019-08-16 12:59:14,207 [main] [INFO ] com.example.demo.DemoApplication = Started DemoApplication in 13.506 seconds (JVM running for 19.889)
+2019-08-16 13:00:11,218 [http-nio-8082-exec-2] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] = Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-16 13:00:11,220 [http-nio-8082-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet = Initializing Servlet 'dispatcherServlet'
+2019-08-16 13:00:11,236 [http-nio-8082-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet = Completed initialization in 16 ms
+2019-08-16 13:00:11,413 [http-nio-8082-exec-2] [INFO ] com.example.demo.user.UserService = log, method:update, Date:2019-08-16T13:00:11.413126100
+2019-08-16 14:19:57,808 [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool = HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m14s625ms658µs501ns).
