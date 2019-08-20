@@ -33,3 +33,4 @@ build/
 ### credential  ###
 credentials.yml
 pipeline.yml
+logs/
