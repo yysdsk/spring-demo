@@ -1,8 +1,11 @@
 package com.example.demo.user;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 @RestController
@@ -23,8 +26,15 @@ public class UserController {
 
     //単件検索
     @GetMapping("/users/{id}")
-    public User getUser(@PathVariable String id) {
-        return userService.findById(id);
+    public ResponseEntity<User> getUser(@PathVariable String id) {
+        int a;
+        if (userService.findById(id)!=null) {
+            a = 200;
+        } else {
+            a = 404;
+        }
+
+        return new ResponseEntity<>(userService.findById(id), HttpStatus.valueOf(a));
     }
 
     @PostMapping("/users")

@@ -1,5 +1,6 @@
 package com.example.demo.user;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -28,8 +29,13 @@ public class UserDao {
     }
 
     public User findUserBeanPropertyById(String id) {
-        RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
-        return jdbc.queryForObject("SELECT * FROM user WHERE id = ?", rowMapper, id);
+        try {
+            RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
+            return jdbc.queryForObject("SELECT * FROM user WHERE id = ?", rowMapper, id);
+        } catch (EmptyResultDataAccessException e) {
+            System.out.println("IDがありません");
+            return null;
+        }
     }
 
     public int insert(User user) {
