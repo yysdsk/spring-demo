@@ -28,15 +28,8 @@ public class UserController {
 
     //単件検索
     @GetMapping("/users/{id}")
-    public ResponseEntity<User> getUser(@PathVariable String id) {
-        int a;
-        if (userService.findById(id)!=null) {
-            a = 200;
-        } else {
-            a = 404;
-        }
-
-        return new ResponseEntity<>(userService.findById(id), HttpStatus.valueOf(a));
+    public User getUser(@PathVariable String id) {
+        return userService.findById(id);
     }
 
     @ExceptionHandler(EmptyResultDataAccessException.class)

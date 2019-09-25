@@ -28,16 +28,6 @@ public class UserDao {
         return jdbc.queryForMap("SELECT * FROM user WHERE id = ?", id);
     }
 
-//    public User findUserBeanPropertyById(String id) {
-//        try {
-//            RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
-//            return jdbc.queryForObject("SELECT * FROM user WHERE id = ?", rowMapper, id);
-//        } catch (EmptyResultDataAccessExんception e) {
-//            System.out.println("IDがありませ");
-//            return null;
-//        }
-//    }
-
     public User findUserBeanPropertyById(String id) {
             RowMapper<User> rowMapper = new BeanPropertyRowMapper<>(User.class);
             return jdbc.queryForObject("SELECT * FROM user WHERE id = ?", rowMapper, id);
