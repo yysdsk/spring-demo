@@ -1,9 +1,11 @@
 package com.example.demo.user;
 
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.EmptyStackException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +37,12 @@ public class UserController {
         }
 
         return new ResponseEntity<>(userService.findById(id), HttpStatus.valueOf(a));
+    }
+
+    @ExceptionHandler(EmptyResultDataAccessException.class)
+    public ResponseEntity<String> ERDAExeptionp(){
+        return new ResponseEntity<>("IDがありませんよ",
+                HttpStatus.valueOf(404));
     }
 
     @PostMapping("/users")
