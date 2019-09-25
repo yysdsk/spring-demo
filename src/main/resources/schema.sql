@@ -5,3 +5,9 @@ CREATE TABLE user (
     dept varchar(200) NOT NULL,
     created_at timestamp NOT NULL
 );
+CREATE TABLE hero (
+    id varchar(100) PRIMARY KEY,
+    name varchar(100) NOT NULL,
+    birthplace varchar(200) NOT NULL,
+    created_at timestamp NOT NULL
+);

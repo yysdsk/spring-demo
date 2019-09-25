@@ -1,3 +1,6 @@
 INSERT INTO user VALUES ('19001', 'yasuda', 'System', CURRENT_TIMESTAMP);
 INSERT INTO user VALUES ('19002', 'takano', 'Sales', CURRENT_TIMESTAMP);
 INSERT INTO user VALUES ('19003', 'maejima', 'Finance', CURRENT_TIMESTAMP);
+INSERT INTO hero VALUES ('19001', 'tony', 'Long Island', CURRENT_TIMESTAMP);
+INSERT INTO hero VALUES ('19002', 'thor', 'Asgard', CURRENT_TIMESTAMP);
+INSERT INTO hero VALUES ('19003', 'Steve', 'Brooklyn', CURRENT_TIMESTAMP);
