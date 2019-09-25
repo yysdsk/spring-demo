@@ -17,4 +17,8 @@ public class HeroService {
     public List<Hero> findAll(){
         return heroDao.finAll();
     }
+
+    public Hero findById(String id){
+        return heroDao.findUserBeanPropertyById(id);
+    }
 }

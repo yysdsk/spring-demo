@@ -6,3 +6,4 @@ curl localhost:8082/users/19001 -v
 
 #hero
 curl localhost:8082/heroes -v
+curl localhost:8082/heroes/19001 -v
