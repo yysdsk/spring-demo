@@ -30,12 +30,6 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @ExceptionHandler(EmptyResultDataAccessException.class)
-    public ResponseEntity<String> ERDAExeptionp() {
-        return new ResponseEntity<>("IDがありませんよ",
-                HttpStatus.valueOf(404));
-    }
-
     @PostMapping("/users")
     public int insertUser(@RequestBody User user) {
         return userService.insert(user);
